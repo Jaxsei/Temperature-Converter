@@ -4,10 +4,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>RandNumGen</title>
+    <title>Project</title>
 </head>
 <body>
+    <form id="form">
+        <h1>Temperature Conversion</h1>
     
+        <input type="number" id="textBox" value="0"><br><br>
+    
+        <input type="radio" name="unit" id="toFahrenheit">
+        <label for="toFahrenheit">Celcius ➡️ Fahrenheit</label><br>
+    
+        <input type="radio" name="unit" id="toCelcius">
+        <label for="toCelcius">Fahrenheit ➡️ Celcius</label><br><br>
+    
+        <button type="button" onclick="convert();">submit</button><br>
+    
+        <p id="result"></p>
+    
+    
+    </form>
     <script src="index.js"></script>
 </body>
 </html>
